@@ -54,7 +54,12 @@ This test is also expected to fail. After running the test it can be seen that w
 
 ##### Test 4
 
+`@Test
+void testPrototypeObjectFactoryWithSingleton() throws Exception{`
 
+This test kind of goes along with our initial requirements but this test also has a problem
+where it creates one single bean during the application startup and injects it. But it can 
+be chosen to be ignored.
 
 ## Learnings:
 
@@ -70,3 +75,5 @@ This test is also expected to fail. After running the test it can be seen that w
    but if you decide to use prototype, be aware of the way you use it matches your scenario and expectations.
 
 
+
+Credits: [Miladro's article](https://medium.com/@miladro/interview-question-how-you-handle-thread-safety-in-spring-boot-f8c8d3aecbee)
